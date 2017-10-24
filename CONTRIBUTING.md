@@ -1,4 +1,4 @@
-# Contributing to [gci16.fossasia.org](http://gci16.fossasia.org/)
+# Contribution
 
 ## Code practices
 
