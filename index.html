@@ -26,36 +26,96 @@
 
         <div class="container">
 
-            <!-- Mentors Section -->
-            <section class="mentors" id="mentors" href="#mentors">
-                <div class="row mentors-wrapper">
-                    <!-- Start ignoring BootLintBear -->
-                    <h2>Open Source Enthusiasts</h2>
-                    <!-- Stop ignoring -->
-                    {% for m in site.data.students %}
-                    {% assign mentor = m[1] %}
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="card">
-                            <div class="avatar">
-                                {% if mentor.image %}
-                                <img src="images/mentors/{{mentor.image}}" alt="{{ mentor.name }}">
-                                {% else %}
-                                <img src="images/mentors/member.png" alt="{{ mentor.name }}">
-                                {% endif %}
-                                <div class="social">
-                                    Show more<br>
-                                    information
-                                </div>
-                                <p style="display: inline-block;">{{mentor.name}}</p>
-                            </div>
-                        </div>
-                        {% include popup.html person=mentor who='mentor' %}
-                    </div>
-                    {% endfor %}
-                </div>
-            </section>
-            <!-- End of Mentor Section -->
-            
+          <!-- Mentors Section -->
+          <section class="mentors" id="mentors" href="#mentors">
+              <div class="row mentors-wrapper">
+                  <!-- Start ignoring BootLintBear -->
+                  <h2>Open Source Enthusiasts</h2>
+                  <!-- Stop ignoring -->
+                  {% for m in site.data.students %}
+                  {% assign mentor = m[1] %}
+                  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                      <div class="card">
+                          <div class="avatar">
+                              {% if mentor.image %}
+                              <img src="images/mentors/{{mentor.image}}" alt="{{ mentor.name }}">
+                              {% else %}
+                              <img src="images/mentors/member.png" alt="{{ mentor.name }}">
+                              {% endif %}
+                              <div class="social">
+                                  Show more<br>
+                                  information
+                              </div>
+                              <p style="display: inline-block;">{{mentor.name}}</p>
+                          </div>
+                      </div>
+                      {% include popup.html person=mentor who='mentor' %}
+                  </div>
+                  {% endfor %}
+              </div>
+          </section>
+          <!-- End of Mentor Section -->
+
+          <!-- Mentors Section -->
+          <section class="contributers" id="contributers" href="#contributers">
+              <div class="row mentors-wrapper">
+                  <!-- Start ignoring BootLintBear -->
+                  <h2>Open Source Enthusiasts</h2>
+                  <!-- Stop ignoring -->
+                  {% for m in site.data.students %}
+                  {% assign mentor = m[1] %}
+                  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                      <div class="card">
+                          <div class="avatar">
+                              {% if mentor.image %}
+                              <img src="images/mentors/{{mentor.image}}" alt="{{ mentor.name }}">
+                              {% else %}
+                              <img src="images/mentors/member.png" alt="{{ mentor.name }}">
+                              {% endif %}
+                              <div class="social">
+                                  Show more<br>
+                                  information
+                              </div>
+                              <p style="display: inline-block;">{{mentor.name}}</p>
+                          </div>
+                      </div>
+                      {% include popup.html person=mentor who='mentor' %}
+                  </div>
+                  {% endfor %}
+              </div>
+          </section>
+          <!-- End of Mentor Section -->
+
+          <!-- Mentors Section -->
+          <section class="students" id="students" href="#students">
+              <div class="row mentors-wrapper">
+                  <!-- Start ignoring BootLintBear -->
+                  <h2>Open Source Enthusiasts</h2>
+                  <!-- Stop ignoring -->
+                  {% for m in site.data.students %}
+                  {% assign mentor = m[1] %}
+                  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                      <div class="card">
+                          <div class="avatar">
+                              {% if mentor.image %}
+                              <img src="images/mentors/{{mentor.image}}" alt="{{ mentor.name }}">
+                              {% else %}
+                              <img src="images/mentors/member.png" alt="{{ mentor.name }}">
+                              {% endif %}
+                              <div class="social">
+                                  Show more<br>
+                                  information
+                              </div>
+                              <p style="display: inline-block;">{{mentor.name}}</p>
+                          </div>
+                      </div>
+                      {% include popup.html person=mentor who='mentor' %}
+                  </div>
+                  {% endfor %}
+              </div>
+          </section>
+          <!-- End of Mentor Section -->
+
     </section>
 <!-- End of Main Content -->
 
