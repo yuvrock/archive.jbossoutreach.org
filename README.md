@@ -1,4 +1,4 @@
-# gci16.fossasia.org
+# jboss-outreach.github.io/gci
 
 [![Join the chat at https://gitter.im/jboss-outreach/gci](https://badges.gitter.im/jboss-outreach/gci.svg)](https://gitter.im/jboss-outreach/gci?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
