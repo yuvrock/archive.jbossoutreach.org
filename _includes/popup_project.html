@@ -1,0 +1,28 @@
+<!-- Ignore HTMLLintBear, BootLintBear -->
+<div class="modal">
+    <div class="picture">
+    {% if include.project.image %}
+    <img src="images/projects/{{include.project.image}}"
+    alt="{{include.project.name}}"
+    width="200px" height="200px">
+    {% endif %}
+    </div>
+    <div class="information">
+    <h3> Information of {{ include.project.name }}</h3>
+    <div>
+    {% if include.person.loction %}
+    <a href="//github.com/{{include.project.location}}"
+       target="_blank">
+        <i class="fa fa-github" style="font-size: 40px; margin: 10px;"></i>
+    </a>
+    </div>
+    <br>
+    {% if include.project.description %}
+    <div style="font-size: 14px; padding: 20px;">
+        {{include.project.description}}
+    </div>
+    {% endif %}
+    </div>
+    <p class="close"
+       style="right: 50px; bottom: 10px; position: absolute;">Close</p>
+</div>
