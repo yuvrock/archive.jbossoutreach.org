@@ -1,14 +1,7 @@
-version: '3'
-
-services:
-  jekyll:
-    image: jekyll/minimal:3.4.4
-    volumes:
-      - $PWD:/srv/jekyll
-    ports:
-      - 4000:4000
-      - 35729:35729
-      - 3000:3000
-      -   80:4000
+jekyll:
+    image: jekyll/jekyll:pages
     command: jekyll serve
-    restart: always
+    ports:
+        - 4000:4000
+    volumes:
+        - .:/srv/jekyll

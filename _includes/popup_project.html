@@ -1,16 +1,14 @@
 <!-- Ignore HTMLLintBear, BootLintBear -->
 <div class="modal">
     <div class="picture">
-    {% if include.project.image %}
-    <img src="images/projects/{{include.project.image}}"
+    <img src="images/projects/project.png"
     alt="{{include.project.name}}"
     width="200px" height="200px">
-    {% endif %}
     </div>
     <div class="information">
     <h3> Information of {{ include.project.name }}</h3>
     <div>
-    {% if include.person.loction %}
+    {% if include.project.loction %}
     <a href="//github.com/{{include.project.location}}"
        target="_blank">
         <i class="fa fa-github" style="font-size: 40px; margin: 10px;"></i>
