@@ -15,6 +15,7 @@ image: your_image
 twitter: Your twitter id
 facebook: Your facebook id
 bio: Some bio about yourself
+blog: https://yourbloglink.com
 lat: Your latitude
 lng: Your longitude
 ```
