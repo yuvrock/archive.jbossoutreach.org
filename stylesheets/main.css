@@ -111,7 +111,7 @@
     transition: all .2s ease-in;
 }
 .mentors .mentors-wrapper:hover, .students-sec .students-wrapper:hover, .projects-sec .projects-wrapper:hover, .blogs-sec .blogs-wrapper:hover, .designs-sec .designs-wrapper:hover {
-    
+
 }
 .mentors .card, #contributors-list .card, .students-sec .card, .projects-sec .card, .blogs-sec .card {
     width: 200px;
@@ -146,7 +146,7 @@
     vertical-align: middle;
 }
 .mentors .card:hover, #contributors-list .card:hover, .students-sec .card:hover, .projects-sec .card:hover, .blogs-sec .card:hover {
-    
+
 }
 .mentors .card p, .students-sec .card p, .projects-sec .card p, .blogs-sec .card p {
     margin-top: 4.5%;
@@ -222,10 +222,10 @@
 }
 
 .students-sec .students-wrapper {
-    background: #2196f3;
+    background: transparent;
 }
 .projects-sec .projects-wrapper {
-    background: #4caf50;
+    background: transparent;
 }
 .blogs-sec .blogs-wrapper {
     background: #00bfa5;
