@@ -124,6 +124,10 @@
     -webkit-transition: all .2s ease-in;
     transition: all .2s ease-in;
 }
+
+/* student section css to for ui enhancement */
+
+
 .card-text{
     overflow: scroll;
     white-space: nowrap;
@@ -186,7 +190,7 @@
     height: 400px;
     background: white;
 }
-.mentors .card .avatar img, .students-sec .card .avatar .img, .projects-sec .card .avatar .img, .blogs-sec .card .avatar .img {
+.card .avatar img, .students-sec .card .avatar .img, .projects-sec .card .avatar .img, .blogs-sec .card .avatar .img {
     width: 80%;
     padding: 2%;
     border-radius: 500px;
@@ -208,7 +212,7 @@
     padding-top: 30%;
     cursor: pointer;
 }
-.mentors .card .avatar:hover .social, .students-sec .card .avatar:hover .social, .projects-sec .card .avatar:hover .links, .blogs-sec .card .avatar:hover .links {
+.card .avatar:hover .social, .students-sec .card .avatar:hover .social, .projects-sec .card .avatar:hover .links, .blogs-sec .card .avatar:hover .links {
     opacity: 0.8;
 }
 .mentors .social i, .students-sec .social i, .projects-sec .links i, .blogs-sec .links i {
