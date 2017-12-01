@@ -14,8 +14,6 @@ github: Your github username
 image: your_image
 bio: Some bio about yourself
 blog: https://yourbloglink.com
-lat: Your latitude    # to max only one digit after decimal
-lng: Your longitude   # to max only one digit after decimal
 ```
 
 **IMPORTANT:**
@@ -37,8 +35,6 @@ image: your_image
 twitter: Your twitter id
 facebook: Your facebook id
 bio: Some bio about yourself
-lat: Your latitude    # to max only one digit after decimal
-lng: Your longitude   # to max only one digit after decimal
 ```
 
 **IMPORTANT:**
