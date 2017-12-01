@@ -32,8 +32,6 @@ To add yourself to student section you need to create a file with your github us
 name: Your name
 github: Your github username
 image: your_image
-twitter: Your twitter id
-facebook: Your facebook id
 bio: Some bio about yourself
 ```
 
