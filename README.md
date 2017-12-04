@@ -1,5 +1,7 @@
 # jboss-outreach.github.io/gci
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/61d5e178fd0f4212a3479528e40de20e)](https://www.codacy.com/app/garg-anuj/gci?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=jboss-outreach/gci&amp;utm_campaign=Badge_Grade)
+
 [![Join the chat at https://gitter.im/jboss-outreach/gci](https://badges.gitter.im/jboss-outreach/gci.svg)](https://gitter.im/jboss-outreach/gci?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 The student site for GCI 2017 Students.
