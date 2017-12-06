@@ -6,7 +6,35 @@
 
 The student site for GCI 2017 Students.
 
-# Adding a mentor
+## Setting up project on local
+
+### Getting ruby on your os installation :
+
+```sh
+$ gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+$ curl -sSL https://get.rvm.io | bash           # setup rvm on your system
+$ source ~/.rvm/scripts/rvm                     # setup rvm tocation
+$ rvm install "ruby-2.4.2"                      # download ruby version 2.4.2 on your os
+$ rvm use "ruby-2.4.2"                          # use ruby-2.4.2 on your os
+```
+
+### Setting up GCI project :
+
+```sh
+# fork and clone your fork of gci website and change dir to it
+$ git clone https://github.com/<username>/gci.git
+$ cd gci
+```
+
+### Running GCI project :
+
+```sh
+$ gem install bundler
+$ bundle install
+$ bundle exec jekyll serve --host 0.0.0.0
+```
+
+## Adding a mentor
 
 To add a mentor you need to create a file with your github username `<username>.yml` in `_data/mentors` folder and please maintain the following format *EXACTLY* (replacing values where indicated):
 
@@ -26,17 +54,6 @@ blog: https://yourbloglink.com
 - Avoid using contractions such as *can't, don't,* etc. If there is no choice (e.g. the name has single quote mark) put double quotes (`"`) around that part.
 - Try to use abbreviations in your name wherever possible, i.e. restrict it to 13 letters (including spaces), otherwise it might be truncated automatically. However, the name will be displayed completely when you hover on it on the website.
 
-# Adding yourselves to student section
-
-To add yourself to student section you need to create a file with your github username `<username>.yml` in `_data/students` folder and please maintain the following format *EXACTLY* (replacing values where indicated):
-
-```yaml
-name: Your name
-github: Your github username
-image: your_image
-bio: Some bio about yourself
-```
-
 **IMPORTANT:**
 
 - All images must be optimized before uploaded to the repo via commit or PR. You may use any image optimizer of your choice.
@@ -45,25 +62,6 @@ bio: Some bio about yourself
 - Avoid changing the whole file just to add yourself. Line endings should not change.
 - Avoid using contractions such as *can't, don't,* etc. If there is no choice (e.g. your name has single quote mark) put double quotes (`"`) around that part.
 - Try to use abbreviations in your name wherever possible, i.e. restrict your name in 13 letters (including spaces), otherwise your name might be truncated automatically. However, your name will be displayed completely when you hover on it on the website.
-
-# Blog Post
-
-To add your blog post, you need to open the file `blogs.yml` in `_data` folder. Maintain the following format *EXACTLY* (replacing values where indicated) to enter your blog in this website.
-
-```yaml
-- name: Your name
-  blog: https://yourbloglink.com
-  blog_img: your_image
-  article: Article title
-  article_link: https://yourarticlelink.com
-```
-
-**IMPORTANT:**
-
-- The image should be placed inside `images/blogs` folder, and `your_image` should be the file's name, for example `mypost.png`. Make sure that the images are in 16:9 aspect ratio.
-- If you do not provide a blog image, a default image will be displayed.
-- Adding article and article_link is optional, unless your task requires it.
-
 
 
 **IMPORTANT:**
