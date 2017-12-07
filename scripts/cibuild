@@ -28,5 +28,3 @@ then
 else
     curl -X POST "https://${BOT_USER}:${BOT_TOKEN}@api.github.com/repos/jboss-outreach/gci/issues/${TRAVIS_PULL_REQUEST}/comments" --data-binary '{"body": "'"$message"'"}'
 fi
-
-

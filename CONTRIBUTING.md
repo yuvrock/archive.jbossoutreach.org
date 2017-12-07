@@ -54,4 +54,3 @@ if your pull-request goes unnoticed. They may have time.
 
 - [Git Rebase (squash last commit)](https://www.youtube.com/watch?v=qh9KtjfjzCU)
 - [Squash Commits with Git](https://davidwalsh.name/squash-commits-git)
-
