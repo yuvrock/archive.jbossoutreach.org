@@ -198,14 +198,15 @@ $.ajax({
   contentType: "application/json; charset=utf-8",
   headers: { Accept: "application/vnd.github.v3+json" },
   url:
-    "https://api.github.com/search/issues?q=@jboss-outreach+label:gci&sort=created&order=desc",
+    "https://api.github.com/search/issues?q=@jboss-outreach+label:codein&sort=created&order=desc",
   success: function(data, status, jqXHR) {
     var result = $.parseJSON(JSON.stringify(data));
     $("#issueList").fadeOut(function() {
       $("#issueList").html(
         '<div class="list-group-item row font-weight-bold"><strong><div class="col-xs-6">Issue Name</div><div class="col-xs-4">Repository</div><div class="col-xs-2"><span class="issueBadge">Status</span></div></strong></div>'
       );
-      for (var i = 0; i < 10; i++) {
+      var maxIterations = result.total_count < 10 ? result.total_count : 10;
+      for (var i = 0; i < maxIterations; i++) {
         var item = result.items[i];
         var myRegexp = /github\.com\/jboss-outreach\/(.+?)\/issues/i;
         var match = myRegexp.exec(item.html_url);
