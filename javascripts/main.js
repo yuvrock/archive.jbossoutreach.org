@@ -15,7 +15,7 @@ var thank = function() {
 var getContributors = function(page) {
   // Fetching contributors list
   $.ajax({
-    url: "https://api.github.com/repos/fossasia/gci16.fossasia.org/contributors?page="+page
+    url: "https://api.github.com/repos/jboss-outreach/gci/contributors?page="+page
   }).done(function(data) {
     if (data.length === 0) {
       // Fetching is done, now display name in Thanks section

@@ -22,6 +22,7 @@
 </head>
 <body>
 
+    
 
   <!-- Navigation Bar -->
       <nav class="navbar navbar-default navbar-fixed-top">
@@ -88,34 +89,23 @@
           </section>
           <!-- End of Mentor Section -->
 
-          <!-- Contributers Section -->
-          <section class="mentors" id="contributors" href="#contributors">
-              <div class="row mentors-wrapper">
-                  <!-- Start ignoring BootLintBear -->
-                  <h2>Contributers</h2>
-                  <!-- Stop ignoring -->
-                  {% for m in site.data.contributers %}
-                  {% assign contributer = m[1] %}
-                  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                      <div class="card">
-                          <div class="avatar">
-                              {% if mentor.image %}
-                              <img src="images/contributers/{{contributer.image}}" alt="{{ contributer.name }}">
-                              {% else %}
-                              <img src="images/contributers/member.png" alt="{{ contributer.name }}">
-                              {% endif %}
-                              <div class="social">
-                                  Show more<br>
-                                  information
-                              </div>
-                              <p style="display: inline-block;">{{contributer.name}}</p>
-                          </div>
-                      </div>
-                      {% include popup.html person=contributer who='contributer' %}
-                  </div>
-                  {% endfor %}
-              </div>
-          </section>
+            <!--Contributor Section -->
+            
+            
+            <section class="contributors-sec" id="contributors" href="#contributors">
+                <div id="contributors-list">
+                      <div class="container">
+                          <div id="contributors-content">
+                             <!--<div class="row contributors">-->
+                                <!-- Start ignoring BootLintBear -->
+                                <h2>Contributors</h2>
+                                <!-- Stop ignoring -->
+
+                             <!--</div>-->
+                       </div>
+                </div>
+            </section>
+                                                      
           <!-- End of Contributers Section -->
 
           <!-- Students Section -->
