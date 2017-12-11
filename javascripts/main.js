@@ -12,6 +12,9 @@ var thank = function() {
     });
   }, 6000);
 };
+
+//Line
+
 var getContributors = function(page) {
   // Fetching contributors list
   $.ajax({
