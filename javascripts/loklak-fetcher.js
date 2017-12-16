@@ -17,7 +17,7 @@ window.loklakFetcher = (function() {
      *                             These are passed as first argument
      */
     getTweets: function(options, callback) {
-      if(typeof options === 'function') { // A callback has been provided as 2nd
+      if(typeof options === "function") { // A callback has been provided as 2nd
                                           // argument (no options)
         callback = options;
         options = {};
@@ -26,7 +26,7 @@ window.loklakFetcher = (function() {
         throw new Error('[LOKLAK-FETCHER] No callback provided');
       }
 
-      var settings = [ 'count', 'source', 'fields', 'limit', 'tzOffset',
+      var settings = [ "count", "source", "fields", "limit", "tzOffset",
         'minified' ];  // Field names for all the possible parameters
       var defaults = [ 100, 'cache', '', '', 0, true ];  // Default values
 
@@ -71,8 +71,8 @@ window.loklakFetcher = (function() {
 
       // Create the URL with all the parameters
       var url = 'http://loklak.org/api/search.json' +
-        '?callback=loklakFetcher.handleData' +
-        '&q=' + query +
+        "?callback=loklakFetcher.handleData" +
+        "&q=" + query +
         '&count=' + options.count +
         '&source=' + options.source +
         '&fields=' + options.fields +
@@ -82,7 +82,7 @@ window.loklakFetcher = (function() {
 
     $.ajax({
       url: url,
-      dataType: 'jsonp',
+      dataType: "jsonp",
       success: function(data) {
         callback(data);
       }
