@@ -27,7 +27,7 @@ window.loklakFetcher = (function() {
       }
 
       var settings = [ "count", "source", "fields", "limit", "tzOffset",
-        'minified' ];  // Field names for all the possible parameters
+        "minified" ];  // Field names for all the possible parameters
       var defaults = [ 100, 'cache', '', '', 0, true ];  // Default values
 
       // Check if no options have been provided
@@ -73,12 +73,12 @@ window.loklakFetcher = (function() {
       var url = 'http://loklak.org/api/search.json' +
         "?callback=loklakFetcher.handleData" +
         "&q=" + query +
-        '&count=' + options.count +
-        '&source=' + options.source +
-        '&fields=' + options.fields +
-        '&limit=' + options.limit +
-        '&timezoneOffset=' + options.tzOffset +
-        '&minified=' + options.minified;
+        "&count=" + options.count +
+        "&source=" + options.source +
+        "&fields=" + options.fields +
+        "&limit=" + options.limit +
+        "&timezoneOffset=" + options.tzOffset +
+        "&minified=" + options.minified;
 
     $.ajax({
       url: url,
