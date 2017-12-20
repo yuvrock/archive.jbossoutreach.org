@@ -7,6 +7,7 @@
 }
 .social-media {
     text-align: center;
+    /*background: #344146;*/
     background: #212121;
     padding-top: 1.4em;
     padding-bottom: 1.4em;
@@ -39,11 +40,15 @@
     -webkit-transition: all .2s ease-in;
     transition: all .2s ease-in;
 }
+/*#contributors-list:hover {
+    box-shadow: 1px 5px 20px #888888;
+}*/
 #contributors h2 {
     text-align: center;
     width: 100%;
     margin: auto;
     padding: 10px 10px;
+    /*box-shadow: 1px 5px 20px #888888;*/
 }
 #contributors-list div span {
     margin-top: 15px;
@@ -55,6 +60,17 @@
     width: 200px;
     height: 200px;
 }
+/*#contributors-list div a {
+    position: absolute;
+    left: 20px;
+    margin-top: 212px;
+    color: #000;
+    cursor: pointer;
+}
+#contributors-list div .gh-icon {
+    position: absolute;
+    top: -3px;
+}*/
 #contributors-list .avatar:hover .contribs {
     opacity: 0.8;
 }
@@ -67,19 +83,27 @@
 .mentors h2, .students-sec h2, .projects-sec h2, .blogs-sec h2,
 .designs-sec h2, .issues-sec h2, .social-media h2,
 .white-header, .contributors-sec h2 {
+    /*background: linear-gradient(-45deg, #3c38ab, #720596);*/
     background: white;
     margin: 0 auto;
     margin-top: 30px;
     margin-bottom: 0.8em;
-    width: 100%;
+    width: 100% !important;
     padding: 20px 0px;
+    /* padding-bottom: 10px; */
     border-radius: 500px;
     font-size: 35px;
     text-align: center;
     font-weight: 800;
     color: black;
     text-transform: uppercase;
+    /* box-shadow: 1px 2px 20px rgba(33,35,23,.51); */
 }
+
+/*.contributors-sec {
+     background: linear-gradient(-45deg, #3c38ab, #720596);
+} */
+
 .mentors .mentors-wrapper, .blogs-sec .blogs-wrapper, .students-sec .students-wrapper, .projects-sec .projects-wrapper, .designs-sec .designs-wrapper, .contributors, #contributors-thanks{
     width: 100%;
     height: 100%;
@@ -98,6 +122,7 @@
 }
 
 .students-wrapper{
+
     width: 100%;
     height: 40px;
     margin: auto;
@@ -109,7 +134,10 @@
     -webkit-transition: all .2s ease-in;
     transition: all .2s ease-in;    
 }
+
+
 .mentors .mentors-wrapper:hover, .students-sec .students-wrapper:hover, .projects-sec .projects-wrapper:hover, .blogs-sec .blogs-wrapper:hover, .designs-sec .designs-wrapper:hover {
+
 }
 .mentors .card, #contributors-list .card, .students-sec .card, .projects-sec .card, .blogs-sec .card {
     width: 200px;
@@ -122,6 +150,10 @@
     -webkit-transition: all .2s ease-in;
     transition: all .2s ease-in;
 }
+
+/* student section css to for ui enhancement */
+
+
 .card-text{
     overflow: scroll;
     white-space: nowrap;
@@ -144,6 +176,7 @@
     vertical-align: middle;
 }
 .mentors .card:hover, #contributors-list .card:hover, .students-sec .card:hover, .projects-sec .card:hover, .blogs-sec .card:hover {
+
 }
 .mentors .card p, .students-sec .card p, .projects-sec .card p, .blogs-sec .card p {
     margin-top: 4.5%;

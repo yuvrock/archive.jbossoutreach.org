@@ -19,7 +19,6 @@ var getContributors = function(page) {
   // Fetching contributors list
   $.ajax({
     url: "https://api.github.com/repos/jboss-outreach/gci/contributors?page="+page
-    url: "https://api.github.com/repos/jboss-outreach/compressor-head-android/contributors?page="+page
   }).done(function(data) {
     if (data.length === 0) {
       // Fetching is done, now display name in Thanks section
@@ -52,11 +51,11 @@ $(getContributors(1));
 
 $(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//, "") === this.pathname.replace(/^\//, "") && location.hostname === this.hostname) {
+    if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
       var target = $(this.hash);
-      target = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       if (target.length) {
-        $("html, body").animate({
+        $('html, body').animate({
           scrollTop: target.offset().top
         }, 1000);
         return false;
@@ -86,12 +85,12 @@ $(function() {
                 .append($('<div class="issue-left"></div>')
                   .append($("<span></span>").append(data[i].number))
                   .append($("<a></a>").attr("target", "_blank").attr("href", data[i].html_url).append(data[i].title))
-                  .append($("<p>Opened by </p>").append($("<a></a>").append(data[i].user.login).attr("href", data[i].user.html_url).attr("target", "_blank")))
+                  .append($("<p>Opened by </p>").append($("<a></a>").append(data[i].user.login).attr("href", data[i].user.html_url).attr('target', '_blank')))
                 )
                 .append($('<div class="issue-right"></div>')
                   .append($("<a class='comments'></a>")
                     .attr("href", data[i].html_url)
-                    .attr("target", "_blank")
+                    .attr('target', '_blank')
                     .append($("<i class='fa fa-comment'></i>"))
                     .append(data[i].comments))
                 );
@@ -107,7 +106,7 @@ $(function() {
     for (i = 0; i < labels.length; i++) {
       var categoryElement = $('<div class="issues-category"></div>');
       var titleButton = $('<div class="button"></div>')
-          .append($("<a></a>").append(labels[i].name).attr("href", labels[i].html_url))
+          .append($('<a></a>').append(labels[i].name).attr("href", labels[i].html_url))
           .css("background", "#" + labels[i].color);
       categoryElement.append(titleButton);
       for (j = data.length - 1; j >= 0; j--) {
@@ -119,12 +118,12 @@ $(function() {
                 .append($('<div class="issue-left"></div>')
                   .append($("<span></span>").append(data[j].number))
                   .append($("<a></a>").attr("target", "_blank").attr('href', data[j].html_url).append(data[j].title))
-                  .append($("<p>Opened by </p>").append($("<a></a>").append(data[j].user.login).attr("href", data[j].user.html_url).attr("target", "_blank")))
+                  .append($("<p>Opened by </p>").append($("<a></a>").append(data[j].user.login).attr("href", data[j].user.html_url).attr('target', '_blank')))
                 )
                 .append($('<div class="issue-right"></div>')
                   .append($("<a class='comments'></a>")
                     .attr("href", data[j].html_url)
-                    .attr("target", "_blank")
+                    .attr('target', '_blank')
                     .append($("<i class='fa fa-comment'></i>"))
                     .append(data[j].comments))
                 );
@@ -145,11 +144,11 @@ function onScroll() {
   $('a.menu-item').each(function() {
     var currLink = $(this);
     var refElement = $(currLink.attr("href"));
-    if (typeof(refElement.position()) === "undefined") {
+    if (typeof(refElement.position()) === 'undefined') {
       refElement = $("#projects");
     }
     if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-      $("a.menu-item").removeClass("active");
+      $('a.menu-item').removeClass("active");
       currLink.addClass("active");
     } else {
       currLink.removeClass("active");
@@ -181,13 +180,13 @@ $(".close").click(function() {
 if (document.readyState === "complete") {
   importSocialMediaWidgets();
 } else {
-  window.addEventListener("load", importSocialMediaWidgets);
+  window.addEventListener('load', importSocialMediaWidgets);
 }
 
 function importSocialMediaWidgets() {
-  var script = document.createElement("script");
-  script.setAttribute("src", "/javascripts/social-widgets-loader.js");
-  script.setAttribute("async", true);
+  var script = document.createElement('script');
+  script.setAttribute('src', '/javascripts/social-widgets-loader.js');
+  script.setAttribute('async', true);
   document.head.appendChild(script);
 }
 
