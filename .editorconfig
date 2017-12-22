@@ -1,7 +1,6 @@
 # EditorConfig is a file which defines behaviour for most text editors
 # I have added this so that there wont be any EOF problems or trailing
 # white space errors to ensure better experience for contributors.
-# Made with love for FOSSASIA
 
 # Defines that this is the top-most EditorConfig file.
 root = true
