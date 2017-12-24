@@ -1,53 +1,54 @@
-// Add your function at the end. First function is of highest priority.
-var contributorsList = [];
-var thank = function() {
-  var j = 0;
-  setInterval(function() {
-    $('#name').fadeOut(function() {
-      if (j === contributorsList.length) {
-        j = 0;
-      }
-      $(this).html("Thanks for your contributions, " + contributorsList[j++]);
-      $(this).fadeIn();
-    });
-  }, 6000);
-};
+"use strict";
 
-//Line
+let allContributors = [];
 
-var getContributors = function(page) {
-  // Fetching contributors list
-  $.ajax({
-    url: "https://api.github.com/repos/jboss-outreach/gci/contributors?page="+page
-  }).done(function(data) {
-    if (data.length === 0) {
-      // Fetching is done, now display name in Thanks section
-      thank();
-      return;
+function storeContributors(contributors) {
+  // Store all the contributors for the repo
+  for (let contributor of contributors) {
+    const index = allContributors.findIndex((element) => contributor.login === element.login);
+    if (index >= 0) {
+      allContributors[index].contributions += contributor.contributions;
+    } else {
+      allContributors.push({
+        login: contributor.login,
+        avatar_url: contributor.avatar_url,
+        contributions: contributor.contributions,
+        html_url: contributor.html_url,
+      });
     }
-    data.forEach(function(contributors) {
-      contributorsList.push(contributors.login);
-      // Ignore LineLengthBear
-      var html = "<div class='col-xs-12 col-sm-6 col-md-4 col-lg-3'><div class='card'>";
-      html += "<div class='avatar'>";
-      html += "<img src=" + contributors.avatar_url + "><div class='contribs'><p>";
-      html += contributors.contributions;
-      if (contributors.contributions === 1) {
-        html += " contribution";
-      } else {
-        html += " contributions";
+  }
+}
+
+async function loadContributors() {
+  const repos = await $.ajax("https://api.github.com/orgs/jboss-outreach/repos?per_page=100");
+
+  // Assume a maximum of 200 contributors per repo
+  const requests = repos.reduce((acc, cur) => {
+    return acc.concat(
+      $.get(cur.contributors_url + "?per_page=100&page=1", (data) => storeContributors(data)),
+      $.get(cur.contributors_url + "?per_page=100&page=2", (data) => storeContributors(data))
+    );
+  }, []);
+  await Promise.all(requests);
+
+  // Build the HTML for the top 52 contributors (divisible by 4)
+  allContributors
+    .sort((a, b) => b.contributions - a.contributions)
+    .slice(0, 52)
+    .forEach((contributor) => {
+      let html = "<div class='col-xs-12 col-sm-6 col-md-4 col-lg-3'><div class='card'><div class='avatar'>";
+      html += "<img src=" + contributor.avatar_url + "><div class='contribs'><p>";
+      html += contributor.contributions + " contribution";
+      if (contributor.contributions > 1) {
+        html += "s";
       }
-      html += "</p><a href=" + contributors.html_url + " class='contributor-gh'><i class='fa fa-github fa-2x' aria-hidden='true'></i></a></div>";
-      html += "<span>";
-      html += contributors.login + "</span></div></div></div>";
+      html += "</p><a href=" + contributor.html_url +
+        " class='contributor-gh'><i class='fa fa-github fa-2x' aria-hidden='true'></i></a></div>";
+      html += "<span>" + contributor.login + "</span></div></div></div>";
       $("#contributors-list").append(html);
     });
-    getContributors(page+1);
-  });
-};
-
-// Calling recursion function
-$(getContributors(1));
+}
+loadContributors();
 
 $(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {
