@@ -109,7 +109,7 @@ function carousel() {
     slideIndex++;
     if (slideIndex > x.length) {slideIndex = 1}    
     x[slideIndex-1].style.display = "block";  
-    setTimeout(carousel, 4000); // Change image every 2 seconds
+    setTimeout(carousel, 5000);
     dots[slideIndex-1].className += " active";
 }
 
@@ -200,10 +200,10 @@ function onScroll() {
       refElement = $("#projects");
     }
     if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-      $('a.menu-item').removeClass("active");
-      currLink.addClass("active");
+      $('a.menu-item').removeClass("active-menu");
+      currLink.addClass("active-menu");
     } else {
-      currLink.removeClass("active");
+      currLink.removeClass("active-menu");
     }
   });
 }
