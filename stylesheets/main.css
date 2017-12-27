@@ -21,6 +21,16 @@
 }
 
 
+.menu-item {
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.active-menu {
+    border-bottom:7px solid #F38A8A;
+    font-family: 'Lato', sans-serif;
+}
+
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -88,9 +98,9 @@
 
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 3.0s;
+  -webkit-animation-duration: 1.0s;
   animation-name: fade;
-  animation-duration: 3.0s;
+  animation-duration: 1.0s;
   animation-fill-mode: forwards;
 
 }
@@ -736,7 +746,6 @@ figure.effect-gcihover:hover figcaption::before {
 #map:hover {
     box-shadow: 1px 5px 20px #888888;
 }
-
 
 
 body {
