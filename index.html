@@ -38,20 +38,21 @@
               <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="">
-              <img src="./images/jbosscommunity.png" height="70">
+              <img src="./images/jbosscommunity.png" height="60" style="margin-top: 7px; margin-left: 20px;">
             </a>
           </div>
           <div class="collapse navbar-collapse" id="collapse">
-            <ul class="nav navbar-nav" id="menu">
-              <li><a class="menu-item" href="#welcome"><h3>Welcome</h3></a></li>
-              <li><a class="menu-item" href="#mentors"><h3>Mentors</h3></a></li>
-              <li><a class="menu-item" href="#contributors"><h3>Contributors</h3></a></li>
-              <li><a class="menu-item" href="#students"><h3>Students</h3></a></li>
-              <li><a class="menu-item" href="#issues"><h3>Issues</h3></a></li>
-              <li><a class="menu-item" href="https://blog.jboss-outreach.org/"><h3>Blog</h3></a></li>
+            <ul class="nav navbar-nav" id="menu" style="margin-top: 20px; font-size: 20px;">
+              <li><a class="menu-item" href="#welcome">Home</a></li>
+              <li><a class="menu-item" href="#mentors">Mentors</a></li>
+              <li><a class="menu-item" href="#contributors">Contributors</a></li>
+              <li><a class="menu-item" href="#students">Students</a></li>
+              <li><a class="menu-item" href="#projects">Projects</a></li>
+              <li><a class="menu-item" href="#issues">Issues</a></li>
+              <li><a class="menu-item" href="https://blog.jboss-outreach.org/">Blog</a></li>
               </ul>
               <a href="https://codein.withgoogle.com/organizations/jboss-community/">
-              <img src="./images/gci_logo.png" height="75" style="margin-top: 10px; margin-left: 35px;">
+              <img src="./images/gci_logo.png" height="80" style="margin-left: 20px; margin-top: 4px">
               </a>
           </div>
         </div>
@@ -148,6 +149,7 @@
           <section class="mentors" id="mentors" href="#mentors">
               <div class="row mentors-wrapper">
                   <!-- Start ignoring BootLintBear -->
+                  <br><br>
                   <h2>Mentors</h2>
                   <!-- Stop ignoring -->
                   {% for m in site.data.mentors %}
@@ -178,24 +180,24 @@
             
             
             <section id="contributors" href="#contributors">
+              <br><br><br>
                 <div class="contributors-sec">
                    <div id="contributors-list">
                       <div class="container">
                           <div id="contributors-content">
                                 <!-- Start ignoring BootLintBear -->
-                                <h2>Contributors</h2>
+                                <h2>Contributors</h2><br><br>
                                 <!-- Stop ignoring -->
                           </div>
                       </div>
                   </div>
               </div>
+            <!-- Blank Space for Contributor section -->
+             <p style="line-height: 3700px"><br></p>
+             <!-- End of blank space -->
             </section>
                                                       
           <!-- End of Contributers Section -->
-
-          <!-- Blank Space (for Contributor section -->
-             <p style="line-height: 3500px"><br></p>
-             <!-- End of blank space -->
 
           <!-- Students Section -->
           <section class="students-sec" id="students" href="#students">
@@ -263,6 +265,8 @@
 		              </div>
 		          </div>
 	          </div>
+
+            <p style="line-height: 100px; text-align: center; font-family: 'Raleway', sans-serif;"> That's all folks! </p>
           </section>
           <!-- End of Issues Section -->
 
