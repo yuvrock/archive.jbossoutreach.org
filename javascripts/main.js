@@ -1,15 +1,33 @@
 window.onload = function() {
-  projectContributors();
+  $.ajax({
+    url: "https://api.github.com/orgs/jboss-outreach/repos"
+  }).done(function(data) {
+    data.forEach(function(repo) {
+      var divRepeated = document.getElementById("repeatedCode");
+      var code = "<div class='col-xs-12 col-sm-6 col-md-4 col-lg-3'><div class='card'><div class='avatar'><img id='projectImage" + repo.name + "' src='images/projects/project.png' alt='Project of JBoss'><div class='social' style='font-size: 20px; margin-top: -35px;'><b><p id='projectHeading" + repo.name + "' style='font-size: 25px;'> </p>contributors</b><br><a target='_blank' href='//github.com/jboss-outreach/" + repo.name + "'><i class='fa fa-github' style='font-size: 30px; margin: 5px;''></i></a></div><p id='projectTitle" + repo.name + "' style='display: inline-block;'></p></div></div></div>";
+      divRepeated.insertAdjacentHTML('afterbegin', code);
+      projectContributors(repo.name, repo.description);
+    });
+  });
 };
 
 "use strict";
 
-function projectContributors(){
-        $.get("https://api.github.com/repos/jboss-outreach/gci/contributors?page=1", function(data, status){
+function projectContributors(name, description){
+        $.get("https://api.github.com/repos/jboss-outreach/" + name + "/contributors?page=1", function(data, status){
             var count = Object.keys(data).length;
-            document.getElementById("projectContribs").innerHTML = count;
+
+            document.getElementById("projectImage" + name).src = imageUrl[name];
+            document.getElementById("projectHeading" + name).innerHTML = count;
+
+            if (name == "gci"){
+            document.getElementById("projectTitle" + name).innerHTML = "Google Code-In Repository";
+            }
+            else {
+            document.getElementById("projectTitle" + name).innerHTML = "&nbsp;" + name;
+            }
+
         });
-  
 } 
 
 let allContributors = [];
