@@ -5,10 +5,11 @@
     margin-top: -150px;
     margin-left: -300px;
     width: 600px;
+    border-radius: 25px;
     height: 300px;
     z-index: 9999;
     padding: 20px;
-    background: #efefef;
+    background: rgba(239, 239, 239, 0.95);
     display:none;
 }
 
@@ -36,6 +37,8 @@
         padding-top: 0 !important;
     }
 }
+
+
 
 .picture {
     display: inline-block;

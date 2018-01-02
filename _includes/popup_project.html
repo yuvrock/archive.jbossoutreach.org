@@ -1,12 +1,13 @@
 <!-- Ignore HTMLLintBear, BootLintBear -->
 <div class="modal">
-    <div class="picture">
+    <div class="picture avatar">
     <img src="images/projects/project.png"
     alt="{{include.project.name}}"
-    width="200px" height="200px">
+    width="250" height="250">
     </div>
+    
     <div class="information">
-    <h3> Information of {{ include.project.name }}</h3>
+    <h3> {{ include.project.name }}</h3>
     <div>
     {% if include.project.location %}
     <a href="//github.com/{{include.project.location}}"
@@ -16,9 +17,10 @@
     {% endif %}
     </div>
     <br>
+    <br>
     {% if include.project.description %}
     <div style="font-size: 14px; padding: 20px;">
-        {{include.project.description}}
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{{include.project.description}}
     </div>
     {% endif %}
     </div>

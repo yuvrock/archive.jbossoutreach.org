@@ -160,9 +160,8 @@
                               {% else %}
                               <img src="images/mentors/member.png" alt="{{ mentor.name }}">
                               {% endif %}
-                              <div class="social">
-                                  Show more<br>
-                                  information
+                              <div class="social" style="font-size: 20px; margin-top: 5px;">
+                                  <b>Check me out!</b>
                               </div>
                               <p style="display: inline-block;">{{mentor.name}}</p>
                           </div>
@@ -213,9 +212,8 @@
                               {% else %}
                               <img src="images/students/member.png" alt="{{ student.name }}">
                               {% endif %}
-                              <div class="social">
-                                  Show more<br>
-                                  information
+                              <div class="social" style="font-size: 20px; margin-top: 5px;">
+                                  <b>Check me out!</b>
                               </div>
                               <p style="display: inline-block;">{{student.name}}</p>
                           </div>
@@ -228,8 +226,8 @@
           <!-- End of Students Section -->
 
           <!-- Projects Section -->
-          <section class="projects-sec" id="projects" href="#projects">
-              <div class="row projects-wrapper">
+          <section class="mentors projects-sec" id="projects" href="#projects">
+              <div class="row mentors-wrapper">
                   <!-- Start ignoring BootLintBear -->
                   <h2>Projects</h2>
                   <!-- Stop ignoring -->
@@ -243,6 +241,9 @@
                               {% else %}
                               <img src="images/projects/project.png" alt="{{ project.name }}">
                               {% endif %}
+                              <div class="social" style="font-size: 20px; margin-top: -15px;">
+                              <b><p id="projectContribs" style="font-size: 25px;"></p>contributors</b>
+                              </div>
                               <p style="display: inline-block;">{{project.name}}</p>
                           </div>
                       </div>

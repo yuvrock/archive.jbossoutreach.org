@@ -323,6 +323,24 @@
     transition: all .2s ease-in;    
 }
 
+.project-sec h2{
+    margin-top: 30px;
+}
+
+.project-wrapper{
+
+    width: 100%;
+    height: 40px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 30px;
+    text-align: center;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;    
+}
+
 
 .mentors .mentors-wrapper:hover, .students-sec .students-wrapper:hover, .projects-sec .projects-wrapper:hover, .blogs-sec .blogs-wrapper:hover, .designs-sec .designs-wrapper:hover {
 
@@ -791,9 +809,10 @@ figure.effect-gcihover:hover figcaption::before {
     /*padding: 1em;*/
 }
 
-.students-section {
+.s-section {
     padding: 2em;
 }
+
 
 .social-media, .issues-sec, .logos, .blog, .projects-sec, .students-sec, .mentors {
     margin-top: 100px;
