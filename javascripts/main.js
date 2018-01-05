@@ -67,8 +67,8 @@ async function loadContributors() {
     .slice(0, 52)
     .forEach((contributor) => {
       let html = "<div class='col-xs-12 col-sm-6 col-md-4 col-lg-3'><div class='card'><div class='avatar'>";
-      html += "<img src=" + contributor.avatar_url + "><div class='contribs'><p style='margin-top: -2.5px !important;'>";
-      html += contributor.contributions + " contribution";
+      html += "<img src=" + contributor.avatar_url + "><div class='contribs'><p style='margin-top: -15.5px !important;'>";
+      html += contributor.contributions + " <br>contribution";
       if (contributor.contributions > 1) {
         html += "s";
       }

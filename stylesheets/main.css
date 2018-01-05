@@ -245,8 +245,8 @@
     display: inline-block;
 }
 #contributors-list div img {
-    width: 200px;
-    height: 200px;
+    width: 160px;
+    height: 160px;
 }
 /*#contributors-list div a {
     position: absolute;
@@ -263,9 +263,9 @@
     opacity: 0.8;
 }
 #contributors-list .contribs p {
-    margin-top: 18px;
+    margin-top: -10px;
     color: #333;
-    font-size: 28px;
+    font-size: 23px;
     font-weight: bold;
 }
 .mentors h2, .students-sec h2, .projects-sec h2, .blogs-sec h2,
