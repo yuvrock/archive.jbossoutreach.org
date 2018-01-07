@@ -492,12 +492,7 @@
     0px 7px 6px rgba(0, 0, 0, 0.1),
     0px 2px 8px rgba(0, 0, 0, 0.1);
 }
-hr {
-    width: 100px;
-    margin-top: 0;
-    border-top: 1px solid #f8f8f8;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-}
+
 .grid {
     position: relative;
     clear: both;
@@ -844,7 +839,6 @@ figure.effect-gcihover:hover figcaption::before {
     box-shadow: 1px 5px 20px #888888;
 }
 
-
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
@@ -893,3 +887,99 @@ body {
   }
 }
 
+.footer-bottom{
+    font-family: 'Open Sans', sans-serif;
+    width: auto;
+    height: auto;
+    background-color:#2e2e2e;
+    color: white;
+    box-sizing: border-box;
+    margin-top: 30px;
+}
+
+#row-one {
+    margin-top: 40px;
+}
+
+.fa  {  
+    color: #808080; 
+    margin-left: 40px;
+}
+
+.fa-facebook-square:hover {
+    color: #3b5998;
+}
+
+.fa-github-square:hover {
+    color: #FFFFFF;
+}
+
+.fa-twitter-square:hover {
+    color: #55ACEE;
+}
+
+.fa-rss-square:hover {
+    color: #f26522;
+}
+
+.fa-gitter:hover {
+    color: #9d3475;
+}
+
+.heading {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.content {  
+    word-wrap: break-word; 
+}
+
+.brand-logo {
+    padding-right: 20px;
+}
+
+.project-links, .quick-links {
+    text-decoration: none;
+    color: #8c8c8c; 
+}
+
+.project-links:hover, .quick-links:hover {
+    text-decoration: none;
+    color: #ffffff;  
+}
+
+.fa , .fa:hover, i , .project-links , .project-links:hover , .quick-links , .quick-links:hover {
+    -webkit-transition: 0.5s ;
+    -moz-transition: 0.5s ;
+    -o-transition:  0.5s ;  
+    transition: 0.5s ;
+}
+
+.contents {
+    line-height: 200%;
+    font-size: 14px;
+}
+
+.about-us{
+    line-height: 180%;
+    color: #c2c2c2;
+}
+
+.community-link, .community-link:hover, .copyright {
+    color: #9E9E9E;
+    opacity: 0.9;
+    text-decoration: none;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+#icons-head {
+    margin-top: 20px;
+}
+
+.connectText {
+    margin-left: 25px;
+}
