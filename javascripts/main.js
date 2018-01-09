@@ -14,7 +14,7 @@ window.onload = function() {
 "use strict";
 
 function projectContributors(name, description){
-        $.get("https://api.github.com/repos/jboss-outreach/" + name + "/contributors?page=1", function(data, status){
+        $.get("https://api.github.com/repos/jboss-outreach/" + name + "/contributors?per_page=100", function(data, status){
             var count = Object.keys(data).length;
 
             document.getElementById("projectImage" + name).src = imageUrl[name];
