@@ -901,28 +901,28 @@ body {
     margin-top: 40px;
 }
 
-.fa  {  
+.social-icons .fa  {  
     color: #808080; 
     margin-left: 40px;
 }
 
-.fa-facebook-square:hover {
+.social-icons .fa-facebook-square:hover {
     color: #3b5998;
 }
 
-.fa-github-square:hover {
+.social-icons .fa-github-square:hover {
     color: #FFFFFF;
 }
 
-.fa-twitter-square:hover {
+.social-icons .fa-twitter-square:hover {
     color: #55ACEE;
 }
 
-.fa-rss-square:hover {
+.social-icons .fa-rss-square:hover {
     color: #f26522;
 }
 
-.fa-gitter:hover {
+.social-icons .fa-gitter:hover {
     color: #9d3475;
 }
 
@@ -949,7 +949,7 @@ body {
     color: #ffffff;  
 }
 
-.fa , .fa:hover, i , .project-links , .project-links:hover , .quick-links , .quick-links:hover {
+.social-icons .fa , .social-icons .fa:hover, i , .project-links , .project-links:hover , .quick-links , .quick-links:hover {
     -webkit-transition: 0.5s ;
     -moz-transition: 0.5s ;
     -o-transition:  0.5s ;  
