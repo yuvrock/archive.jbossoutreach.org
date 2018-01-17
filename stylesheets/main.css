@@ -901,7 +901,7 @@ body {
     margin-top: 40px;
 }
 
-.social-icons .fa  {  
+.social-icons .fab , .social-icons .fas {  
     color: #808080; 
     margin-left: 40px;
 }
@@ -949,7 +949,10 @@ body {
     color: #ffffff;  
 }
 
-.social-icons .fa , .social-icons .fa:hover, i , .project-links , .project-links:hover , .quick-links , .quick-links:hover {
+.social-icons .fab , .social-icons .fab:hover, 
+.social-icons .fas , .social-icons .fas:hover, i , 
+.project-links , .project-links:hover , 
+.quick-links , .quick-links:hover {
     -webkit-transition: 0.5s ;
     -moz-transition: 0.5s ;
     -o-transition:  0.5s ;  
