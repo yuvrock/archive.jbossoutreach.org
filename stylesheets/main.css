@@ -777,6 +777,18 @@ figure.effect-gcihover:hover figcaption::before {
 
 .navbar-brand {
     margin-top: -7px;
+    
+}
+
+.navbar-nav {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.navbar-jboss-logo {
+    height: 60px;
+    margin-top: 7px; 
+    margin-left: 20px;  
 }
 
 .ribbon {
@@ -964,7 +976,7 @@ body {
     font-size: 14px;
 }
 
-.about-us{
+.about-us {
     line-height: 180%;
     color: #c2c2c2;
 }
@@ -985,4 +997,193 @@ body {
 
 .connectText {
     margin-left: 25px;
+}
+
+.social-icons .fa-facebook-square, 
+.social-icons .fa-twitter-square, 
+.social-icons .fa-github-square, 
+.social-icons .fa-rss-square {
+    font-size: 50px;
+}
+
+.social-icons .fa-gitter {
+    font-size: 46px;
+}
+
+/*For mobile*/
+
+@media (min-width: 320px) and (max-width: 480px){
+
+  .buttonStyle {    
+    padding: 5px 10px;
+    text-align: center;    
+    font-size: 12px;
+    margin: 4px 2px;   
+  }
+
+  .slideshow-container {    
+    margin-top: 55px;
+  }
+
+  .headingText {    
+    font-size: 26px;    
+    padding: 8px 12px;    
+    width: 75%;
+    bottom: 8px;    
+    margin-bottom: 130px;
+  }
+
+  .headingCode {   
+    font-size: 14px;      
+    width: 50%;
+    bottom: 8px;
+    text-align: center;   
+    margin-bottom: 30px;
+  }
+
+  .prev, .next {
+    top: 50%;    
+    padding: 10px;
+    margin-top: -22px;
+    margin-left: 2px;
+    margin-right: 2px;    
+    font-size: 24px;
+  }
+
+  .text {
+    font-size: 20px;    
+    width: 30%;
+    bottom: 10px;    
+  }
+
+  .dot {    
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;    
+    border-radius: 50%;    
+  }  
+
+  .project-links, .quick-links {
+    text-align: center;
+  }
+
+  .navbar-jboss-logo {
+    height: 30px;
+    margin-left: 5px;
+  }
+
+  .site-links , .projects-links {
+    text-align: center;
+  }
+
+  .social-icons {
+    font-size: 10px;
+  }
+  .social-icons .fa-facebook-square, 
+  .social-icons .fa-twitter-square, 
+  .social-icons .fa-github-square, 
+  .social-icons .fa-rss-square {
+    font-size: 40px;
+    margin-left: 20px;
+  }
+
+  .social-icons .fa-gitter {
+    font-size: 40px;
+    margin-left: 20px;
+  }  
+}
+
+/*For tablets*/
+
+@media(min-width: 480px) and (max-width: 767px){
+ 
+   .navbar-jboss-logo{
+    height: 45px;
+    margin-top: 1px; 
+    margin-left: 10px; 
+    
+  }
+
+  .navbar-brand {
+    margin-top: -15px;
+    
+  }
+
+  .navbar-nav {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  .buttonStyle {    
+    padding: 10px 15px;
+    text-align: center;    
+    font-size: 12px;
+    margin: 4px 2px;   
+  }
+
+  .slideshow-container {    
+    margin-top: 55px;
+  }
+
+  .headingText {    
+    font-size: 32px;    
+    padding: 8px 12px;    
+    width: 75%;
+    bottom: 8px;    
+    margin-bottom: 250px;
+  }
+
+  .headingCode {   
+    font-size: 16px;      
+    width: 50%;
+    bottom: 8px;
+    text-align: center;   
+    margin-bottom: 120px;
+  }
+
+  .prev, .next {
+    top: 50%;    
+    padding: 14px;
+    margin-top: -22px;
+    margin-left: 2px;
+    margin-right: 2px;    
+    font-size: 22px;
+  }
+
+  .text {
+    font-size: 20px;    
+    width: 30%;
+    bottom: 10px;    
+  }
+
+  .dot {    
+    height: 12px;
+    width: 12px;
+    margin: 0 2px;    
+    border-radius: 50%;    
+  }  
+
+  .project-links, .quick-links {
+    text-align: center;
+  }
+
+  .site-links , .projects-links {
+    text-align: center;
+  }
+
+  .social-icons {
+    font-size: 10px;
+  }
+  .social-icons .fa-facebook-square, 
+  .social-icons .fa-twitter-square, 
+  .social-icons .fa-github-square, 
+  .social-icons .fa-rss-square {
+    font-size: 45px;
+    margin-left: 30px;
+  }
+
+  .social-icons .fa-gitter {
+    font-size: 45px;
+    margin-left: 30px;
+  }  
 }
