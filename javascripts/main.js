@@ -1,10 +1,10 @@
 window.onload = function() {
   $.ajax({
-    url: "https://api.github.com/orgs/jboss-outreach/repos"
+    url: "https://api.github.com/orgs/JBossOutreach/repos"
   }).done(function(data) {
     data.forEach(function(repo) {
       var divRepeated = document.getElementById("repeatedCode");
-      var code = "<div class='col-xs-12 col-sm-6 col-md-4 col-lg-3'><div class='card'><div class='avatar'><img id='projectImage" + repo.name + "' src='images/projects/project.png' alt='Project of JBoss'><div class='social' style='font-size: 20px; margin-top: -35px;'><b><p id='projectHeading" + repo.name + "' style='font-size: 25px;'> </p>contributors</b><br><a target='_blank' href='//github.com/jboss-outreach/" + repo.name + "'><i class='fab fa-github' style='font-size: 30px; margin: 5px;''></i></a></div><p id='projectTitle" + repo.name + "' style='display: inline-block;'></p></div></div></div>";
+      var code = "<div class='col-xs-12 col-sm-6 col-md-4 col-lg-3'><div class='card'><div class='avatar'><img id='projectImage" + repo.name + "' src='images/projects/project.png' alt='Project of JBoss'><div class='social' style='font-size: 20px; margin-top: -35px;'><b><p id='projectHeading" + repo.name + "' style='font-size: 25px;'> </p>contributors</b><br><a target='_blank' href='//github.com/JbossOutreach/" + repo.name + "'><i class='fab fa-github' style='font-size: 30px; margin: 5px;''></i></a></div><p id='projectTitle" + repo.name + "' style='display: inline-block;'></p></div></div></div>";
       divRepeated.insertAdjacentHTML('afterbegin', code);
       projectContributors(repo.name, repo.description);
     });
@@ -14,7 +14,7 @@ window.onload = function() {
 "use strict";
 
 function projectContributors(name, description){
-        $.get("https://api.github.com/repos/jboss-outreach/" + name + "/contributors?per_page=100", function(data, status){
+        $.get("https://api.github.com/repos/JbossOutreach/" + name + "/contributors?per_page=100", function(data, status){
             var count = Object.keys(data).length;
 
             document.getElementById("projectImage" + name).src = imageUrl[name];
@@ -50,7 +50,7 @@ function storeContributors(contributors) {
 }
 
 async function loadContributors() {
-  const repos = await $.ajax("https://api.github.com/orgs/jboss-outreach/repos?per_page=100");
+  const repos = await $.ajax("https://api.github.com/orgs/JBossOutreach/repos?per_page=100");
 
   // Assume a maximum of 200 contributors per repo
   const requests = repos.reduce((acc, cur) => {
@@ -194,7 +194,7 @@ $.ajax({
   contentType: "application/json; charset=utf-8",
   headers: { Accept: "application/vnd.github.v3+json" },
   url:
-    "https://api.github.com/search/issues?q=@jboss-outreach+label:codein&sort=created&order=desc",
+    "https://api.github.com/search/issues?q=@JbossOutreach+label:codein&sort=created&order=desc",
   success: function(data, status, jqXHR) {
     var result = $.parseJSON(JSON.stringify(data));
     $("#issueList").fadeOut(function() {
@@ -204,7 +204,7 @@ $.ajax({
       var maxIterations = result.total_count < 10 ? result.total_count : 10;
       for (var i = 0; i < maxIterations; i++) {
         var item = result.items[i];
-        var myRegexp = /github\.com\/jboss-outreach\/(.+?)\/issues/i;
+        var myRegexp = /github\.com\/JbossOutreach\/(.+?)\/issues/i;
         var match = myRegexp.exec(item.html_url);
         var issueStateHTML =
           '<span class="issueBadge ' +
