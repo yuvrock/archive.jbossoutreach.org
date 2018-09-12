@@ -1,5 +1,3 @@
----
----
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,18 +15,16 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway|Lato:400,900|Quicksand|Open+Sans|Roboto+Mono" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="./images/logos/jboss-logo.ico">
 
-    <title>GCI | JBoss Community</title>
+    <title> GCI | JBoss Community </title>
 </head>
 <body>
-
-    
 
   <!-- Navigation Bar -->
       <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed"
-              data-toggle="collapse" data-target="#collapse"
+              data-toggle="collapse" data-target=".navbar-collapse"
               aria-expanded="false">
               <span class="sr-only"></span>
               <span class="icon-bar"></span>
@@ -39,7 +35,7 @@
               <img class="navbar-jboss-logo" src="./images/jbosscommunity.png" style="">
             </a>
           </div>
-          <div class="collapse navbar-collapse" id="collapse">
+          <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav" id="menu">
               <li><a class="menu-item" href="#welcome">Home</a></li>
               <li><a class="menu-item" href="#mentors">Mentors</a></li>
@@ -48,10 +44,10 @@
               <li><a class="menu-item" href="#projects">Projects</a></li>
               <li><a class="menu-item" href="#issues">Issues</a></li>
               <li><a class="menu-item" href="https://blog.jboss-outreach.org/">Blog</a></li>
-              </ul>
-              <a href="https://codein.withgoogle.com/organizations/jboss-community/">
+            </ul>
+            <a href="https://codein.withgoogle.com/organizations/jboss-community/">
               <img class="navbar-gci-logo" src="./images/gci_logo.png" height="80" style="margin-left: 20px; margin-top: 4px">
-              </a>
+            </a>
           </div>
         </div>
       </nav>
@@ -61,88 +57,29 @@
 
     <section class="main-content">
 
-    <!-- Slideshow -->
-    <section class="welcome" id="welcome" href="#welcome">
+<!-- Slideshow -->
+<section class="welcome" id="welcome" href="#welcome">
+  <div class="slideshow-container">
+    <div class="fade">
 
-        <div class="slideshow-container">
+      <img id="slideImage" style="width:100%;">
+      <div id="slideTitle" class="headingText"></div>
+      <div id="slideLower" class="headingCode"></div>
 
-        <div class="mySlides fade">
-          <img src="http://www.wethetalent.co/wp-content/uploads/2017/08/1400_700-QSfR8wHNRjrYs5hfY6QKKLviQvrlXldmrtC85OoJslZcPOzXcTtVSTLZ5cW5QQZI.jpg" style="width:100%;">
-          
-          <div class="headingText">BUILD. LEARN. WIN.</div>
-          <div class="headingCode">
-            if($("#you") == "code-lover") <br>
-                print("Come hack with us!");
-          </div>
-          
-
-          <div class="text">
-          <div style="text-align:center">
-          <span class="dot" onclick="currentSlide(1)"></span> 
-          <span class="dot" onclick="currentSlide(2)"></span> 
-          <span class="dot" onclick="currentSlide(3)"></span> 
-        </div></div>
-
-          
+      <div class="text">
+        <div class="text-center" id="dots-wrapper">
         </div>
+      </div>
+    </div>
 
-        <div class="mySlides fade">
-          <img src="https://www.veracode.com/sites/default/files/shutterstock_601201364%20%281%29.jpg" style="width:100%">
-          
-          <div class="headingText">JOIN US!</div><br>
-          <div class="headingCode">
-            The JBoss Community<br><br>
-            <a href="https://codein.withgoogle.com/organizations/jboss-community/">
-            <button class="buttonStyle buttonRed">Check us out!</button>
-            </a>
-          </div>
-          
-        <div class="text">
-          <div style="text-align:center">
-          <span class="dot" onclick="currentSlide(1)"></span> 
-          <span class="dot" onclick="currentSlide(2)" style="color: #fff; background-color: #fff;"></span> 
-          <span class="dot" onclick="currentSlide(3)"></span> 
-        </div></div>
+    <a class="prev" onclick="plusSlides(-2)">&#10094;</a>
+    <a class="next" onclick="plusSlides(0)">&#10095;</a>
 
+  </div><br>
 
-      
-        </div>
-
-        <div class="mySlides fade">
-          <img src="https://www.veracode.com/sites/default/files/shutterstock_133524401.jpg" style="width:100%">
-          
-          <div class="headingText">INTRIGUING BLOGS</div><br>
-          <div class="headingCode">
-            Read our thought-provoking stories<br><br>
-            <a href="https://blog.jboss-outreach.org/">
-            <button class="buttonStyle buttonRed">Read</button>
-            </a>
-          </div>
-
-        
-
-        <div class="text">
-          <div style="text-align:center">
-          <span class="dot" onclick="currentSlide(1)"></span> 
-          <span class="dot" onclick="currentSlide(2)"></span> 
-          <span class="dot" onclick="currentSlide(3)" style="color: #fff; background-color: #fff;"></span> 
-        </div></div>
-
-          
-        </div>
-
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-        </div>
-        <br>
-
-        
 </section>
         <!-- End of slideshow -->
-
         <div class="container">
-
           <!-- Mentors Section -->
           <section class="mentors" id="mentors" href="#mentors">
               <div class="row mentors-wrapper">
@@ -253,32 +190,32 @@
     <div class="footer-bottom">
     <div class="container-fluid" >
       <div class="row" id = "row-one" >
-        <div class="col-md-4" style="margin-left: 20px;">        
+        <div class="col-md-4" style="margin-left: 20px;">
           <p class="heading text-center">About Us <hr class=""> </p>
-          <div class="brand-logo">          
+          <div class="brand-logo">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/JBoss_logo.svg/640px-JBoss_logo.svg.png"  class="img-rounded" alt="JBoss_logo" align="left" height="110" style="margin-right: 15px;">
           </div>
           <p class="contents about-us"><span class="right"><i>JBoss Community</i> is a community of open source projects. We host a large number of projects written in programming languages like Java, Ruby, PHP and Node.</span> <br><br><p class="about-us second"><i style="font-size: 12px;">Communities are built with individual contributions of all shapes and sizes.</i> Come join us and be a part of our enthusiastic and co-operative community. </p></p>
         </div>
         <div class="col-md-1"></div>
-        <div class="col-md-3">        
+        <div class="col-md-3">
           <p class="heading text-center">Our Google Code-In 2017 Journey</p><hr>
           <div class="contents projects-links">
-              <a href="https://github.com/jboss-outreach/compressor-head" class="project-links" target="_blank">Compressor Head </a><br>
-              <a href="https://github.com/jboss-outreach/compressor-head-android" class="project-links" target="_blank" >Compressor Head Android</a><br>
-              <a href="https://github.com/jboss-outreach/lead-management-android" class="project-links" target="_blank">Lead Management Android </a> <br>     
-              <a href="https://github.com/jboss-outreach/rest-android" class="project-links" target="_blank">Rest Android</a><br>
-              <a href="https://github.com/jboss-outreach/certifier" class="project-links" target="_blank">Certifier</a><br>
-              <a href="https://github.com/jboss-outreach/facebook-echo-bot" class="project-links" target="_blank">Facebook Echo Bot</a><br>
-              <a href="https://github.com/jboss-outreach/notes" class="project-links">Notes Application </a><br> 
-              <a href="https://github.com/jboss-outreach" class="project-links" target="_blank">And many more...</a><br>
+              <a href="https://github.com/jbossOutreach/compressor-head" class="project-links" target="_blank">Compressor Head </a><br>
+              <a href="https://github.com/jbossOutreach/compressor-head-android" class="project-links" target="_blank" >Compressor Head Android</a><br>
+              <a href="https://github.com/jbossOutreach/lead-management-android" class="project-links" target="_blank">Lead Management Android </a> <br>
+              <a href="https://github.com/jbossOutreach/rest-android" class="project-links" target="_blank">Rest Android</a><br>
+              <a href="https://github.com/jbossOutreach/certifier" class="project-links" target="_blank">Certifier</a><br>
+              <a href="https://github.com/jbossOutreach/facebook-echo-bot" class="project-links" target="_blank">Facebook Echo Bot</a><br>
+              <a href="https://github.com/jbossOutreach/notes" class="project-links">Notes Application </a><br>
+              <a href="https://github.com/jbossOutreach" class="project-links" target="_blank">And many more...</a><br>
           </div>
         </div>
         <div class="col-md-1"></div>
-        <div class="col-md-2">          
+        <div class="col-md-2">
             <div class="heading">
               <p class="text-center">Sitemap</p><hr>
-            </div>        
+            </div>
             <div class="contents text-left site-links">
               <a href="#welcome" class="quick-links">Home</a><br>
               <a href="#mentors" class="quick-links">Mentors</a><br>
@@ -289,40 +226,41 @@
               <a href="https://blog.jboss-outreach.org/" class="quick-links">Read our amazing stories!</a><br>
               <a href="https://gitter.im/jboss-outreach" class="quick-links">Join Our Gitter Channel</a>
             </div>
-            
+
         </div>
       </div>
-      <div class="connectText row">       
-        <div class="heading text-center"> 
+      <div class="connectText row">
+        <div class="heading text-center">
           <br>
-          Connect With Us! 
-        </div>        
+          Connect With Us!
+        </div>
       </div>
       <div class="row text-center">
         <div class="social-icons">
           <a href="https://www.facebook.com/jboss"> <i class="fab fa-facebook-square"></i></a>
           <a href="https://twitter.com/JBoss" target="_blank"> <i class="fab fa-twitter-square"></i></a>
-          <a href="https://github.com/jboss-outreach" target="_blank"> <i class="fab fa-github-square " ></i></a>
+          <a href="https://github.com/jbossOutreach" target="_blank"> <i class="fab fa-github-square " ></i></a>
           <a href="https://planet.jboss.org/" target="_blank"> <i class="fas fa-rss-square"></i></a>
-          <a href="https://gitter.im/jboss-outreach/" target="_blank"> <i class="fab fa-gitter"></i></a>
+          <a href="https://gitter.im/jbossOutreach/" target="_blank"> <i class="fab fa-gitter"></i></a>
         </div>
       </div>
       <div class="row">
         <div class="text-center copyright" style=" margin-left: 30px; margin-bottom: 10px;">
-        <br>Copyright &copy; <a href="https://www.redhat.com/" class="community-link">RedHat 2018</a></div>    
+        <br>Copyright &copy; <a href="https://www.redhat.com/" class="community-link">RedHat 2018</a></div>
       </div>
     </div>
   </div>
   <!-- Footer Ends Here -->
-  
+
 <!-- End of Main Content -->
     <!-- Scripts -->
     <script
       src="https://code.jquery.com/jquery-3.2.1.min.js"
       integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
       crossorigin="anonymous"></script>
+    <script src="javascripts/slideshow.js"></script>
     <script src="javascripts/main.js"></script>
-    <script src="javascripts/image_urls.js"></script>    
+    <script src="javascripts/image_urls.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>
