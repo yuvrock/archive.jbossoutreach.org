@@ -1,10 +1,10 @@
-# jboss-outreach.github.io/gci
+# gci.jbossoutreach.org
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/61d5e178fd0f4212a3479528e40de20e)](https://www.codacy.com/app/garg-anuj/gci?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=jboss-outreach/gci&amp;utm_campaign=Badge_Grade) 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/61d5e178fd0f4212a3479528e40de20e)](https://www.codacy.com/app/garg-anuj/gci?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=JbossOutreach/gci&amp;utm_campaign=Badge_Grade) 
 [![Join the chat at https://gitter.im/jboss-outreach/gci](https://badges.gitter.im/jboss-outreach/gci.svg)](https://gitter.im/jboss-outreach/gci?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) 
-[![Build Status](https://travis-ci.org/jboss-outreach/gci.svg?branch=master)](https://travis-ci.org/jboss-outreach/gci)
+[![Build Status](https://travis-ci.org/JBossOutreach/gci.jbossoutreach.org.svg?branch=master)](https://travis-ci.org/JBossOutreach/gci.jbossoutreach.org)
 
-The student site for GCI 2017 Students.
+The student site for GCI 2018 Students.
 
 ## Setting up project on local
 
@@ -77,6 +77,6 @@ Probably the easiest way to seek help is to comment on your Task instance. Pleas
 You can instead participate in various chatrooms where you can ask both students and mentors for help. Here are few links to chatrooms that you could join for support:
 
 
-1. Here are some links to some of project's chatroom:
+1. Here is the link to the project's chatroom:
    - [Google Code In](https://gitter.im/jboss-outreach/gci)
 
