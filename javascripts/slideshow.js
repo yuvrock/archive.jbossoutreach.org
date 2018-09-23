@@ -56,7 +56,7 @@ function plusSlides(n) {
 function showSlides(n) {
   if(n<0 || n>slides.length){
     slideIndex = 0;
-    break;
+    return;
   }
   // Replace data
   $("#slideImage").attr("src", slides[n].img);
