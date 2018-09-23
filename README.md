@@ -1,7 +1,7 @@
 # gci.jbossoutreach.org
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/61d5e178fd0f4212a3479528e40de20e)](https://www.codacy.com/app/garg-anuj/gci?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=JbossOutreach/gci&amp;utm_campaign=Badge_Grade) 
-[![Join the chat at https://gitter.im/jboss-outreach/gci](https://badges.gitter.im/jboss-outreach/gci.svg)](https://gitter.im/jboss-outreach/gci?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) 
+[![Join the chat at https://gitter.im/jbossOutreach/gci](https://badges.gitter.im/jbossOutreach/gci.svg)](https://gitter.im/jbossOutreach/gci?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) 
 [![Build Status](https://travis-ci.org/JBossOutreach/gci.jbossoutreach.org.svg?branch=master)](https://travis-ci.org/JBossOutreach/gci.jbossoutreach.org)
 
 The student site for GCI 2018 Students.
@@ -78,5 +78,5 @@ You can instead participate in various chatrooms where you can ask both students
 
 
 1. Here is the link to the project's chatroom:
-   - [Google Code In](https://gitter.im/jboss-outreach/gci)
+   - [Google Code In](https://gitter.im/jbossOutreach/gci)
 
