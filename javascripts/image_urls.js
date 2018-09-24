@@ -7,10 +7,8 @@ var imageUrl = {
                   "contact-groups-server": "http://www.iconarchive.com/download/i85562/graphicloads/100-flat/contact.ico",
                   "wiki-explorer": "https://image.flaticon.com/icons/png/512/49/49360.png",
                   "lead-management-server": "https://github.com/jbossOutreach/lead-management-android/blob/master/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png?raw=true",
-                  "compressor-head": "https://github.com/jbossOutreach/compressor-head-android/blob/master/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png?raw=true",
                   "contact-groups-android": "http://www.iconarchive.com/download/i85562/graphicloads/100-flat/contact.ico",
-                  "notes": "http://maciek.lasyk.info/sysop/wp-content/uploads/2013/12/redhat.png",
                   "facebook-meme-bot": "http://www.iconninja.com/files/245/45/195/facebook-media-social-like-network-fb-icon.svg",
-                  "html-css-js-tasks": "http://maciek.lasyk.info/sysop/wp-content/uploads/2013/12/redhat.png",
-                  "rest-api-vert.x": "http://maciek.lasyk.info/sysop/wp-content/uploads/2013/12/redhat.png",
                 };
+
+export { imageUrl };

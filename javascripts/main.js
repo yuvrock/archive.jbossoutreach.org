@@ -1,3 +1,5 @@
+import { imageUrl } from "./image_urls.js";
+
 window.onload = function() {
   $.ajax({
     url: "https://api.github.com/orgs/JBossOutreach/repos"
@@ -17,7 +19,14 @@ function projectContributors(name, description){
         $.get("https://api.github.com/repos/JbossOutreach/" + name + "/contributors?per_page=100", function(data, status){
             var count = Object.keys(data).length;
 
-            document.getElementById("projectImage" + name).src = imageUrl[name];
+            Object.keys(imageUrl).forEach(function(key){
+              if(key){
+                if(key === name){
+                  document.getElementById("projectImage" + name).src = imageUrl[key];
+                }
+              }
+            });
+
             document.getElementById("projectHeading" + name).innerHTML = count;
 
             if (name == "gci"){
@@ -123,7 +132,6 @@ $(".menu-item").click(function(){
 var modalShown = false;
 
 $(".card").click(function() {
-    console.log("it was clicked");
     if (!modalShown) {
         $(this).next(".modal").css("display", "block");
         modalShown = true;
