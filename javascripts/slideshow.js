@@ -13,7 +13,7 @@ slides.push({
 slides.push({
   img: "https://www.veracode.com/sites/default/files/shutterstock_133524401.jpg",
   headerText: "INTRIGUING BLOGS",
-  lowerHTML: "Read our thought-provoking stories<br><br><a href='https://blog.jboss-outreach.org/'><button class='buttonStyle buttonRed'>Read</button></a>'",
+  lowerHTML: "Read our thought-provoking stories<br><br><a href='https://blog.jboss-outreach.org/'><button class='buttonStyle buttonRed'>Read</button></a>",
 });
 
 
