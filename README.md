@@ -18,15 +18,15 @@ $ rvm install "ruby-2.4.2"                      # download ruby version 2.4.2 on
 $ rvm use "ruby-2.4.2"                          # use ruby-2.4.2 on your os
 ```
 
-### Setting up GCI project :
+### Setting up GCI project
 
 ```sh
 # fork and clone your fork of gci website and change dir to it
-$ git clone https://github.com/<username>/gci.git
-$ cd gci
+$ git clone https://github.com/<username>/gci.jbossoutreach.org.git
+$ cd gci.jbossoutreach.org
 ```
 
-### Running GCI project :
+### Running GCI project
 
 ```sh
 $ gem install bundler
@@ -76,7 +76,5 @@ Probably the easiest way to seek help is to comment on your Task instance. Pleas
 
 You can instead participate in various chatrooms where you can ask both students and mentors for help. Here are few links to chatrooms that you could join for support:
 
-
 1. Here is the link to the project's chatroom:
    - [Google Code In](https://gitter.im/jbossOutreach/gci)
-
