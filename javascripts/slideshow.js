@@ -1,7 +1,7 @@
 var slides = [];
 
 slides.push({
-  img: "http://www.wethetalent.co/wp-content/uploads/2017/08/1400_700-QSfR8wHNRjrYs5hfY6QKKLviQvrlXldmrtC85OoJslZcPOzXcTtVSTLZ5cW5QQZI.jpg",
+  img: "https://www.wethetalent.co/wp-content/uploads/2017/08/1400_700-QSfR8wHNRjrYs5hfY6QKKLviQvrlXldmrtC85OoJslZcPOzXcTtVSTLZ5cW5QQZI.jpg",
   headerText: "BUILD. LEARN. WIN.",
   lowerHTML: "if($('#you') == 'code-lover') <br> print('Come hack with us!');",
 });
