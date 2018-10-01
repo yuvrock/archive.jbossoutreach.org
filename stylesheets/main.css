@@ -783,8 +783,6 @@ figure.effect-gcihover:hover figcaption::before {
 }
 
 .navbar-jboss-logo {
-    height: 60px;
-    margin-top: 7px;
     margin-left: 20px;
 }
 
@@ -1065,7 +1063,6 @@ body {
   }
 
   .navbar-jboss-logo {
-    height: 30px;
     margin-left: 5px;
   }
 
@@ -1095,8 +1092,6 @@ body {
 @media(min-width: 480px) and (max-width: 767px){
 
    .navbar-jboss-logo{
-    height: 45px;
-    margin-top: 1px;
     margin-left: 10px;
 
   }
@@ -1183,4 +1178,8 @@ body {
     font-size: 45px;
     margin-left: 30px;
   }
+}
+.navbar-jboss-logo {
+   margin-top: relative;
+   height: inherit;	
 }
