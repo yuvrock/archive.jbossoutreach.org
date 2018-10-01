@@ -15,6 +15,7 @@ window.onload = function() {
 
 "use strict";
 
+
 function projectContributors(name, description){
         $.get("https://api.github.com/repos/JbossOutreach/" + name + "/contributors?per_page=100", function(data, status){
             var count = Object.keys(data).length;
@@ -126,7 +127,9 @@ function onScroll() {
 }
 
 $(".menu-item").click(function(){
-    $("#collapse").removeClass("in");
+    $(".collapse").removeClass("in");
+    $(".collapse").collapse("hide");
+
 });
 
 var modalShown = false;
