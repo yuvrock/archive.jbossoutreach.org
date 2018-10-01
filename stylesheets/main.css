@@ -218,7 +218,7 @@
     height: 100%;
     margin: auto;
     margin-top: 10px;
-    padding: 30px;
+    /* padding: 3vmin; */
     text-align: center;
     -moz-transition: all .2s ease-in;
     -o-transition: all .2s ease-in;
@@ -228,11 +228,16 @@
 /*#contributors-list:hover {
     box-shadow: 1px 5px 20px #888888;
 }*/
-#contributors h2 {
+
+.contributors-sec .container{
+    padding-left: 2vw;
+}
+#contributorsTitle {
     text-align: center;
     width: 100%;
     margin: auto;
-    padding: 10px 10px;
+    padding: 0px;
+    box-sizing: border-box;
     /*box-shadow: 1px 5px 20px #888888;*/
 }
 #contributors-list div span {
