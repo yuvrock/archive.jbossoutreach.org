@@ -127,9 +127,12 @@ function onScroll() {
 }
 
 $(".menu-item").click(function(){
-    $(".collapse").removeClass("in");
     $(".collapse").collapse("hide");
 
+});
+
+$(document).click(function(){
+    $(".collapse").collapse("hide");
 });
 
 var modalShown = false;
